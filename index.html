@@ -49,6 +49,8 @@
         if (keyCode === 13) {
           socket.send(value);
           msgInput.value = "";
+          msgContainer.innerHTML =
+            msgContainer.innerHTML + `<div class="socket__msg">${value}</div>`;
         }
       }
 
